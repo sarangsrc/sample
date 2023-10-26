@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="invisible()">hide</button>
+    <div id="hidden">
+        <h1>newwwwwwwwwwwwwww</h1>
+    </div>
+
+    <script>
+        function invisible() {
+            const hidden = document.getElementById('hidden')
+            if (hidden.style.display === 'none' || hidden.style.display === '') {
+                hidden.style.display = 'block';
+            }
+            else {
+                hidden.style.display ='none';
+            }
+        }
+    </script>
+</body>
+
+</html>
